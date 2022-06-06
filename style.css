@@ -1,14 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 img {
-width: 320px;
-height: 320px;
 object-fit: cover;
 vertical-align: top;
-object-position: top;
+object-position: center;
 }
 body {
  background: #222;
@@ -16,6 +10,7 @@ body {
  justify-content: center;
  align-items: center;
  min-height: 100vh;
+ overflow: hidden;
 }
 .container {
   position: relative;
@@ -27,9 +22,9 @@ body {
 }
 .container .card {
   position: relative;
-  width: 320px;
-  height: 320px;
-  margin: 15px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -88,12 +83,12 @@ body {
   transition-delay: 0.5s;
 }
 .container .card .contentBx .content h3 {
-  font-size: 1.4em;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 .container .card .contentBx .content p {
-  font-size: 1em;
+  font-size: 0.5em;
   line-height: 1.4em;
-  margin-top: 0.9em;
+  margin-top: 1.5em;
 }
