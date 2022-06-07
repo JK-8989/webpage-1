@@ -3,6 +3,7 @@ img {
 object-fit: cover;
 vertical-align: top;
 object-position: center;
+user-select: none;
 }
 body {
  background: #222;
