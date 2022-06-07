@@ -9,40 +9,60 @@ const images = [
   './images/09952.png','./images/09953.png','./images/09954.png',
   './images/09955.png','./images/09956.png','./images/09957.png',
   './images/09958.png','./images/09959.png','./images/09960.png',
-  './images/09961.png','./images/09962.png','./images/09963.png'
+  './images/09961.png','./images/09962.png','./images/09963.png',
+
+  './images/09964.png','./images/09965.png','./images/09966.png',
+  './images/09967.png','./images/09968.png','./images/09969.png',
+  './images/09970.png','./images/09971.png','./images/09972.png',
+  './images/09973.png','./images/09974.png','./images/09975.png',
+  './images/09976.png','./images/09977.png','./images/09978.png',
+  './images/09979.png','./images/09980.png','./images/09981.png',
+  './images/09982.png','./images/09983.png','./images/09984.png',
+  './images/09985.png','./images/09986.png','./images/09987.png'
 ]
-
-
+let num = Math.floor(Math.random() * images.length);
+console.log(num);
 
 function insertRandomImg (){
   let img = document.querySelectorAll('img');
 
-  // let index = Math.floor(Math.random()*10);
-  // console.log(index);
-
   for (let i = 0; i < img.length; i++){
-    const randomImg1 = images[Math.floor(Math.random() * images.length)];
-    const randomImg2 = images[Math.floor(Math.random() * images.length)];
-    const randomImg3 = images[Math.floor(Math.random() * images.length)];
-    const randomImg4 = images[Math.floor(Math.random() * images.length)];
-    const randomImg5 = images[Math.floor(Math.random() * images.length)];
-    const randomImg6 = images[Math.floor(Math.random() * images.length)];
-
-    console.log(randomImg1)
-    img[0].src = randomImg1;
-    img[1].src = randomImg2;
-    img[2].src = randomImg3;
-    img[3].src = randomImg4;
-    img[4].src = randomImg5;
-    img[5].src = randomImg6;
+    
+    let randomImg = images[Math.floor(Math.random() * images.length)];
+    img[i].src = randomImg;
+    console.log(randomImg)
   }
-
-  
-
-  // img.setAttribute('src', theImg);
 }
-
 window.addEventListener('load', insertRandomImg)
+
+// let array = [];
+// let element = num;
+
+// function  add_element_to_array(){
+  
+//   for (let x = 0; x < images.length; x++) {
+//       array.push(element);
+//       console.log(array[x]);
+//       // return
+//   }
+  
+  
+// }
+// add_element_to_array();
+//----------------------------------
+
+// var nums = [1,2,3,4,5,6,7,8,9,10],
+//     ranNums = [],
+//     i = nums.length,
+//     j = 0;
+
+// while (i--) {
+//     j = Math.floor(Math.random() * (i+1));
+//     ranNums.push(nums[j]);
+//     nums.splice(j,1);
+// }
+// ranNums.next().value; 
+//To use afterwards (for each time that the numbers are used)
 
 
 
